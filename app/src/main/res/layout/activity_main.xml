@@ -7,149 +7,149 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/TitleTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player #2"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:layout_marginTop="84dp"
+        android:text="Wage Calculator"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Player #1"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <EditText
+        android:id="@+id/txtOperand1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fight Game"
-        app:layout_constraintBottom_toTopOf="@+id/btnFight"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Class: Tank"
-        app:layout_constraintBottom_toTopOf="@+id/player1Health"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Class: Rogue"
-        app:layout_constraintBottom_toTopOf="@+id/player2Health"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/player1Health"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Health: 500"
-        app:layout_constraintBottom_toTopOf="@+id/player1DMG"
-        app:layout_constraintEnd_toStartOf="@+id/player2Health"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/TitleTXT" />
 
     <Button
-        android:id="@+id/btnFight"
+        android:id="@+id/btnCalcu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fight"
+        android:layout_marginBottom="392dp"
+        android:text="CALCULATE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player1DMG" />
-
-    <TextView
-        android:id="@+id/player1DMG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Damage: 2-10"
-        app:layout_constraintBottom_toTopOf="@+id/btnFight"
-        app:layout_constraintEnd_toStartOf="@+id/player2DMG"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player1Health" />
-
-    <TextView
-        android:id="@+id/player2DMG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Damage: 6-15"
-        app:layout_constraintBottom_toTopOf="@+id/btnFight"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/player1DMG"
-        app:layout_constraintTop_toBottomOf="@+id/player2Health" />
-
-    <TextView
-        android:id="@+id/player2Health"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Health: 250"
-        app:layout_constraintBottom_toTopOf="@+id/player2DMG"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/player1Health"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/WinText"
-        android:layout_width="66dp"
-        android:layout_height="16dp"
-        android:text="Wins"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
-
-    <TextView
-        android:id="@+id/PlayerText"
-        android:layout_width="79dp"
-        android:layout_height="16dp"
-        android:text="Player"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.341"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/RstBtn"
+        android:id="@+id/OvertimeTXT"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2196F3"
+        android:text="Overtime Hours"
+        android:textAlignment="viewStart"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HoursTXT" />
+
+    <TextView
+        android:id="@+id/txtAnswer2Over"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toEndOf="@+id/OvertimeTXT"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswer1Hours" />
+
+    <Button
+        android:id="@+id/HoursTXT"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="416dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Hours"
+        android:textAlignment="viewStart"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAnswer4OW"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toEndOf="@+id/OWageTXT"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswer3Wage" />
+
+    <TextView
+        android:id="@+id/txtAnswer1Hours"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="60dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/OWageTXT"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Overtime Wage"
+        android:textAlignment="viewStart"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WageTXT" />
+
+    <Button
+        android:id="@+id/WageTXT"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Wage"
+        android:textAlignment="viewStart"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OvertimeTXT" />
+
+    <TextView
+        android:id="@+id/txtAnswer3Wage"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toEndOf="@+id/WageTXT"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswer2Over" />
+
+    <TextView
+        android:id="@+id/HoursTXT2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="36dp"
+        android:text="Hours"
+        app:layout_constraintBottom_toTopOf="@+id/txtOperand1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.338"
-        app:layout_constraintStart_toEndOf="@+id/btnFight"
-        app:layout_constraintTop_toBottomOf="@+id/player2DMG" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTXT" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
